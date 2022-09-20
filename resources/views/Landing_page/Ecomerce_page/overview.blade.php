@@ -30,7 +30,7 @@
                     <div class="position-absolute box-2  ">
 
                     </div>
-               <p>hello bro</p>
+
 
                 </div>
 
