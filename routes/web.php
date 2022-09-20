@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MerchantController;
 use  App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Admin\AdminController;
 
@@ -81,6 +82,10 @@ Route::get('/profile', [UserController::class, 'index'])->name('user.dashboard')
 Route::group(['prefix'=>'user','middleware'=>['user','auth'],'namespace'=>'User'],function()
 {
 Route::get('dashboard', [UserController::class, 'index'])->name('user.dashboard');
+});
+Route::group(['prefix'=>'merchant','middleware'=>['merchant','auth'],'namespace'=>'Merchant'],function()
+{
+Route::get('dashboard', [MerchantController::class, 'index'])->name('merchant.dashboard');
 });
 
 Route::get('profile/{auth_id}', [AdminController::class, 'profile']);

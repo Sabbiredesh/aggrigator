@@ -42,6 +42,10 @@ class LoginController extends Controller
         {
             return route( 'user.dashboard') ;
         }
+        elseif ( Auth() -> user() -> role_id == 3 )
+        {
+            return route( 'merchant.dashboard') ;
+        }
     }
     public function __construct()
     {

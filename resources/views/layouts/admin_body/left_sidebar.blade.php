@@ -52,7 +52,7 @@
                         <span> Dashboards </span>
                     </a>
                     <div class="collapse" id="sidebarDashboards">
-                        <ul class="nav-second-level">
+                        {{-- <ul class="nav-second-level">
                             <li>
                                 <a href="index.html">Dashboard 1</a>
                             </li>
@@ -65,7 +65,7 @@
                             <li>
                                 <a href="dashboard-4.html">Dashboard 4</a>
                             </li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </li>
 
