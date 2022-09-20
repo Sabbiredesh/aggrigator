@@ -546,6 +546,7 @@
 
             <!-- User box -->
             <div class="user-box text-center">
+                {{-- testy --}}
                 <img src="../assets/images/users/user-6.jpg" alt="user-img" title="Mat Helme"
                      class="rounded-circle avatar-md">
                 <div class="dropdown">
