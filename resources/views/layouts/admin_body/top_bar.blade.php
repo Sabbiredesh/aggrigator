@@ -13,7 +13,9 @@
                                 </button>
                             </div>
                         </div>
+
                         {{-- <div class="dropdown-menu dropdown-lg" id="search-dropdown">
+
                             <!-- item-->
                             <div class="dropdown-header noti-title">
                                 <h5 class="text-overflow mb-2">Found 22 results</h5>
@@ -46,7 +48,9 @@
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="media">
+
                                         <img class="d-flex mr-2 rounded-circle" src="../assets/images/users/user-2.jpg" alt="Generic placeholder image" height="32">
+
                                         <div class="media-body">
                                             <h5 class="m-0 font-14">Erwin E. Brown</h5>
                                             <span class="font-12 mb-0">UI Designer</span>
@@ -66,7 +70,9 @@
                                 </a>
                             </div>
 
+
                         </div> --}}
+
                     </div>
                 </form>
             </li>
@@ -145,12 +151,15 @@
             <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
                 <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <img src="../assets/images/flags/us.jpg" alt="user-image" height="16">
+
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item">
+
                         <img src="../assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">German</span>
+
                     </a>
 
                     <!-- item-->
@@ -264,9 +273,11 @@
 
             <li class="dropdown notification-list topbar-dropdown">
                 <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+
                     <img src="../assets/images/users/user-6.jpg" alt="user-image" class="rounded-circle">
                     <span class="pro-user-name ml-1">
                                 Stanley <i class="mdi mdi-chevron-down"></i>
+
                             </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
@@ -281,7 +292,9 @@
                         <span>My Account</span>
                     </a>
 
+
                     <!-- item-->
+
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                         <i class="fe-settings"></i>
                         <span>Settings</span>
@@ -296,10 +309,12 @@
                     <div class="dropdown-divider"></div>
 
                     <!-- item-->
+
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                         <i class="fe-log-out"></i>
                         <span>Logout</span>
                     </a>
+
 
                 </div>
             </li>

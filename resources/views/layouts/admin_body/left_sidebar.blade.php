@@ -2,12 +2,14 @@
     <div class="h-100" data-simplebar>
         <!-- User box -->
         <div class="user-box text-center">
+
             <img src= " {{ asset('Admin/assets/images/users/user-6.jpg') }}" alt="user-img" title="Mat Helme"
                  class="rounded-circle avatar-md">
             <div class="dropdown">
                 <a href="javascript: void(0);" class="text-dark font-weight-normal dropdown-toggle h5 mt-2 mb-1 d-block"
                    data-toggle="dropdown">Wasima Akram </a>
                 {{-- <div class="dropdown-menu user-pro-dropdown">
+
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
@@ -33,7 +35,9 @@
                         <span>Logout</span>
                     </a>
 
+
                 </div> --}}
+
             </div>
             <p class="text-muted">Admin Head</p>
         </div>
@@ -43,15 +47,19 @@
 
             <ul id="side-menu">
 
+
                 {{-- <li class="menu-title">Navigation</li> --}}
 
                 <li>
                     <a href="#" data-toggle="collapse">
+
                         <i data-feather="airplay"></i>
                         <span class="badge badge-success badge-pill float-right">4</span>
                         <span> Dashboards </span>
                     </a>
+
                     {{-- <div class="collapse" id="sidebarDashboards">
+
                         <ul class="nav-second-level">
                             <li>
                                 <a href="index.html">Dashboard 1</a>
@@ -66,12 +74,14 @@
                                 <a href="dashboard-4.html">Dashboard 4</a>
                             </li>
                         </ul>
+
                     </div> --}}
                 </li>
 
                 {{-- <li class="menu-title mt-2">Apps</li> --}}
 
                 {{-- <li>
+
                     <a href="apps-calendar.html">
                         <i data-feather="calendar"></i>
                         <span> Calendar </span>
@@ -83,6 +93,7 @@
                         <i data-feather="message-square"></i>
                         <span> Chat </span>
                     </a>
+
                 </li> --}}
                 {{-- <li>
                     <a href="#sidebarEcommerce" data-toggle="collapse">
@@ -107,17 +118,20 @@
                     <a href="#sidebarEcommerce" data-toggle="collapse">
                         <i class="fa-solid fa-list-check"></i>
                         <span> Management </span>
+
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarEcommerce">
                         <ul class="nav-second-level">
                             <li>
+
                                 <a href="#">Order Management</a>
                             </li>
                             <li>
                                 <a href="#">Tracking</a>
                             </li>
                             {{-- <li>
+
                                 <a href="ecommerce-product-detail.html">Product Detail</a>
                             </li>
                             <li>
@@ -140,12 +154,14 @@
                             </li>
                             <li>
                                 <a href="ecommerce-checkout.html">Checkout</a>
+
                             </li> --}}
                         </ul>
                     </div>
                  </li>
 
                 {{--<li>
+
                     <a href="#sidebarCrm" data-toggle="collapse">
                         <i data-feather="users"></i>
                         <span> CRM </span>
@@ -781,7 +797,9 @@
                         </ul>
                     </div>
                 </li>
+
             </ul> --}}
+
 
         </div>
         <!-- End Sidebar -->
