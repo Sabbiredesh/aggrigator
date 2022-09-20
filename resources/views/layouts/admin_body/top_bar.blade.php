@@ -292,6 +292,14 @@
                         <span>My Account</span>
                     </a>
 
+                    @php
+                    $auth_id=Auth::user()->id;
+                     @endphp
+                      <!-- item-->
+                      <a href="{{ url('profile',$auth_id) }}" class="dropdown-item notify-item">
+                        <i class="fe-settings"></i>
+                        <span>My Profile</span>
+                    </a>
 
                     <!-- item-->
 
@@ -313,6 +321,18 @@
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                         <i class="fe-log-out"></i>
                         <span>Logout</span>
+
+                    </a> --}}
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+                    <i class="fe-log-out"></i> {{ __('Logout') }}
+                 </a> <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                       <i class="fe-log-out"></i> {{ __('Logout') }}
+
                     </a>
 
 

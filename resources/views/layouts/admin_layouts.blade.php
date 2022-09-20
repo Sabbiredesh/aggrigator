@@ -823,8 +823,9 @@
     <!-- Start Page Content here -->
     <!-- ============================================================== -->
     {{--    contentpage here--}}
-
+    <div class="content-page">
     @yield('admin_home_content')
+    </div>
 
     <!-- ============================================================== -->
     <!-- End Page content -->

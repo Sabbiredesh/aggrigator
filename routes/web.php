@@ -40,14 +40,21 @@ Route::get('/dashbord', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::middleware([\App\Http\Middleware\Authenticate::class])->group(function () {
-    Route::group(['prefix' => 'admin', 'middleware' => ['admin', 'auth'], 'namespace' => 'Admin'], function () {
-        Route::get('dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
-    });
-    Route::get('/profile', [UserController::class, 'index'])->name('user.dashboard');
 
-    Route::group(['prefix' => 'user', 'middleware' => ['user', 'auth'], 'namespace' => 'User'], function () {
-        Route::get('dashboard', [UserController::class, 'index'])->name('user.dashboard');
-    });
+Route::middleware([\App\Http\Middleware\Authenticate::class])->group(function(){
+Route::group(['prefix'=>'admin','middleware'=>['admin','auth'],'namespace'=>'Admin'],function()
+{
+    Route::get('dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+
+});
+Route::get('/profile', [UserController::class, 'index'])->name('user.dashboard');
+
+Route::group(['prefix'=>'user','middleware'=>['user','auth'],'namespace'=>'User'],function()
+{
+Route::get('dashboard', [UserController::class, 'index'])->name('user.dashboard');
+});
+
+Route::get('profile/{auth_id}', [AdminController::class, 'profile']);
+
 });
 
